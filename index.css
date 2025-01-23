@@ -43,16 +43,23 @@ header {
   margin-left: 60px; /*para que los elementos del nav tengan un margen a la izquierda de 60px*/
   font-size: 15px; /*tamaño de la letra*/
   font-weight: 600; /*grosor de la letra*/
-  border-bottom: transparent 2px solid; /*para que los elementos del nav tengan un borde de 2px abajo transparente*/
+  border-bottom: 2px solid transparent; /*para que los elementos del nav tengan un borde de 2px abajo transparente*/
   transition: all 0.5s ease; /*para que la transición de los elementos del nav sea de 0.5s*/
 }
 
 .navlist a:hover {
-  border-bottom: #f2f2f2 2px solid; /*para que los elementos del nav tengan un borde de 2px abajo blanco al pasar el mouse*/
+  border-bottom: 2px solid white; /*para que los elementos del nav tengan un borde de 2px abajo blanco al pasar el mouse*/
 }
 
+/*#menu-icon {
+  display: none; para que el icono del menú no se muestre
+
+}*/
+
 #menu-icon {
-  display: none; /*para que el icono del menú no se muestre*/
+  font-size: 35px;
+  z-index: 101; /*para que el icono del menú esté por encima del header*/
+  cursor: pointer;
 }
 
 #menu-toggle {
@@ -61,4 +68,22 @@ header {
 
 .menu-icon-action {
   display: none; /*para que el icono del menú no se muestre*/
+}
+
+/* INVENTO*/
+.hero {
+  height: 100%; /*para que el hero ocupe todo el alto de la pantalla*/
+  width: 100%; /*para que el hero ocupe todo el ancho de la pantalla*/
+  min-height: 100vh; /*para que el hero ocupe mínimo el 100% del alto de la pantalla*/
+  background: linear-gradient(
+    245.59deg,
+    #31494e 0%,
+    #385e70 25%,
+    #131313 75%
+  ); /*para que el hero tenga un degradado de colores*/
+  position: relative; /*para que el hero sea relativo*/
+  display: grid; /*para que los elementos del hero se acomoden en grid*/
+  grid-template-columns: 1fr 1fr; /*para que los elementos del hero se acomoden en dos columnas*/
+  align-items: center; /*para que los elementos del hero se acomoden en el centro verticalmente*/
+  gap: 2rem; /*para que los elementos del hero tengan un espacio de 2rem entre ellos*/
 }
