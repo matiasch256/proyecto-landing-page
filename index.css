@@ -1,11 +1,31 @@
 /*  <uniquifier>: Use a unique and descriptive class name
  <weight>: Use a value from 100 to 700 */
 
-body {
-  font-family: "Roboto Mono", serif;
+/* font-family: "Roboto Mono", serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*para que el padding y margin no afecten el tamaño del elemento*/
+  font-family: "Times New Roman", Times, serif; /*fuente de letra*/
+  list-style: none; /*remueve los puntos de la lista*/
+  text-decoration: none; /*remueve el subrayado de los links*/
+  color: white;
 }
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
+
+body {
+  background-color: #1a1a1a; /*todo: cambiar color de fondo*/
+}
+
+header {
+  position: fixed; /*para que el header se quede fijo en la parte superior de la pantalla*/
+  right: 0;
+  top: 0;
+  z-index: 100; /*para que el header esté por encima de todo*/
+  width: 100%; /*para que el header ocupe todo el ancho de la pantalla*/
+  display: flex; /*para que los elementos del header se acomoden en fila*/
+  align-items: center; /*para que los elementos del header se acomoden en el centro verticalmente*/
+  justify-content: space-between; /*para que los elementos del header se acomoden en los extremos*/
+  padding: 15px 3%; /*para que el header tenga un padding de 15px arriba y abajo y 3% a los lados*/
+  background-color: transparent; /*para que el header sea transparente*/
 }
