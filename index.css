@@ -29,3 +29,36 @@ header {
   padding: 15px 3%; /*para que el header tenga un padding de 15px arriba y abajo y 3% a los lados*/
   background-color: transparent; /*para que el header sea transparente*/
 }
+
+.logo {
+  font-size: 30px; /*tamaño de la letra*/
+  font-weight: 800; /*grosor de la letra*/
+}
+
+.navlist {
+  display: flex; /*para que los elementos del nav se acomoden en fila*/
+}
+
+.navlist a {
+  margin-left: 60px; /*para que los elementos del nav tengan un margen a la izquierda de 60px*/
+  font-size: 15px; /*tamaño de la letra*/
+  font-weight: 600; /*grosor de la letra*/
+  border-bottom: transparent 2px solid; /*para que los elementos del nav tengan un borde de 2px abajo transparente*/
+  transition: all 0.5s ease; /*para que la transición de los elementos del nav sea de 0.5s*/
+}
+
+.navlist a:hover {
+  border-bottom: #f2f2f2 2px solid; /*para que los elementos del nav tengan un borde de 2px abajo blanco al pasar el mouse*/
+}
+
+#menu-icon {
+  display: none; /*para que el icono del menú no se muestre*/
+}
+
+#menu-toggle {
+  display: none; /*para que el checkbox nunca se muestre*/
+}
+
+.menu-icon-action {
+  display: none; /*para que el icono del menú no se muestre*/
+}

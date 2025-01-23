@@ -7,6 +7,7 @@
     <!-- LINK CSS -->
     <link rel="stylesheet" href="./index.css" />
     <!-- LINK ICONS -->
+    <!-- https://boxicons.com/ -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -28,7 +29,14 @@
     <!-- Cabezera -->
     <header>
       <!-- LOGO -->
-      <a href="#" class="logo">LOGO</a>
+      <a href="#" class="logo">MatDev</a>
+
+      <!-- Truco para que el icono sea clickleable sin javascript -->
+      <input type="checkbox" name="checkbox" id="menu-toggle" />
+      <label for="toggle" class="menu-icon-action">
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </label>
+
       <!-- NAVBAR -->
       <ul class="navlist">
         <li><a href="#">Home</a></li>
