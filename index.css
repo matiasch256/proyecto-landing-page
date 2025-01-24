@@ -235,14 +235,10 @@ section {
     padding-top: 100px;
   }
 
-  .hero-img {
-    text-align: center;
-  }
-
   .hero-img img {
     width: 80%; /* Ajusta el ancho según la pantalla */
     max-width: none; /* Permite que se ajuste dinámicamente */
-    margin: 0 auto;
+    margin: 10% 0 0 10%;
   }
   .hero {
     height: 100%;
