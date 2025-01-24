@@ -236,7 +236,9 @@ section {
   }
 
   .hero-img img {
-    margin: 0;
+    width: 80%; /* Ajusta el ancho según la pantalla */
+    max-width: none; /* Permite que se ajuste dinámicamente */
+    margin: 0 auto;
   }
   .hero {
     height: 100%;
