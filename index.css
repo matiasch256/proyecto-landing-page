@@ -212,6 +212,7 @@ section {
     width: 80%;
     margin: 10% 0 0 10%;
   }
+
   .hero-text p {
     font-size: 70%;
   }
@@ -237,8 +238,12 @@ section {
 
   .hero-img img {
     width: 80%; /* Ajusta el ancho según la pantalla */
-    max-width: none; /* Permite que se ajuste dinámicamente */
-    margin: 10% 0 0 10%;
+    margin: 0;
+  }
+
+  .hero-img img:hover {
+    width: 90%; /*para que la imagen del hero tenga un ancho de 90% al pasar el mouse*/
+    opacity: 0.6; /*para que la imagen del hero tenga una opacidad de 0.6 al pasar el mouse*/
   }
   .hero {
     height: 100%;
