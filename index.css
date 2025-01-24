@@ -87,3 +87,7 @@ header {
   align-items: center; /*para que los elementos del hero se acomoden en el centro verticalmente*/
   gap: 2rem; /*para que los elementos del hero tengan un espacio de 2rem entre ellos*/
 }
+
+section {
+  padding: 0 8%; /*para que el section tenga un padding de 0 arriba y abajo y 8% a los lados*/
+}
