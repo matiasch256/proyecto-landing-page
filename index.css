@@ -1,8 +1,6 @@
 /*  <uniquifier>: Use a unique and descriptive class name
  <weight>: Use a value from 100 to 700 */
 
-/* font-family: "Roboto Mono", serif; */
-
 * {
   padding: 0;
   margin: 0;
@@ -90,4 +88,72 @@ header {
 
 section {
   padding: 0 8%; /*para que el section tenga un padding de 0 arriba y abajo y 8% a los lados*/
+}
+
+.hero-text h5 {
+  font-size: 14px; /*tamaño de la letra*/
+  font-weight: 400; /*grosor de la letra*/
+  margin-bottom: 25px; /*para que el elemento tenga un margen abajo de 25px*/
+}
+
+.hero-text h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 50px; /*tamaño de la letra*/
+  line-height: 1;
+  margin: 0 0 30px; /*para que el elemento tenga un margen abajo de 30px*/
+}
+
+.hero-text h4 {
+  font-size: 18px; /*tamaño de la letra*/
+  font-weight: 600; /*grosor de la letra*/
+  margin-bottom: 10px; /*para que el elemento tenga un margen abajo de 25px*/
+}
+
+.hero-text p {
+  font-size: 80%; /*tamaño de la letra con respecto del contenedor padre, aunque achiquemos la pagina*/
+  margin-bottom: 40px; /*para que el elemento tenga un margen abajo de 40px*/
+  line-height: 1.9; /*para que el elemento tenga un line-height de 1.9*/
+}
+
+.hero-img img {
+  width: 400px; /*para que la imagen del hero tenga un ancho de 400px*/
+  margin: 10% 0 10% 0;
+  height: auto; /*para que la imagen del hero tenga un alto automático*/
+  transition: all 4s linear; /*para que la transición de la imagen del hero sea de 5s*/
+}
+
+.hero-img img:hover {
+  width: 450px; /*para que la imagen del hero tenga un ancho de 450px al pasar el mouse*/
+  opacity: 0.6; /*para que la imagen del hero tenga una opacidad de 0.6 al pasar el mouse*/
+}
+
+.hero-text a {
+  display: inline-block; /*sigue siendo inline pero permite que se le pueda dar un alto y un ancho*/
+  background-color: #4d4d4d;
+  border: 1px solid transparent;
+  padding: 15px 30px; /*para que el elemento tenga un padding de 15px arriba y abajo y 30px a los lados*/
+  line-height: 1.4; /*para que el elemento tenga un line-height de 1.4*/
+  font-size: 14px; /*tamaño de la letra*/
+  font-weight: 500; /*grosor de la letra*/
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.5s ease; /*para que la transición del elemento sea de 0.5s*/
+}
+
+.hero-text a:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+
+.hero-text .portfolio {
+  background-color: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+  margin-left: 20px;
+}
+
+.hero-text a i {
+  vertical-align: middle;
+  margin-right: 5px;
 }
